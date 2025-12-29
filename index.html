@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manifiesto KUPOS - Final A4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="no-print container-fluid text-center py-2 bg-dark text-white mb-3">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+            <span class="small">🖨️ Ajustes: <strong>A4</strong> | Márgenes: <strong>Ninguno</strong> | Escala: <strong>100%</strong></span>
+            <button onclick="window.print()" class="btn btn-warning fw-bold btn-sm px-4">
+                IMPRIMIR MANIFIESTOS
+            </button>
+        </div>
+    </div>
+
+    <div class="sheet-outer">
+        <div class="sheet-content">
+            <header class="header-section">
+                <div class="header-top">
+                    <div class="brand-area">
+                        <h1 class="company-name">KUPOS PERU SAC</h1>
+                        <div class="ruc">RUC: 20613273108</div>
+                        <div class="address">OF. PRINCIPAL: Av. Camelias Nro. 185 Int. 803</div>
+                    </div>
+                    <div class="doc-area">
+                        <h2 class="doc-title">MANIFIESTO DE PASAJEROS</h2>
+                        <div class="manifest-box">
+                            <span class="lbl">N° MANIFIESTO:</span>
+                            <span class="val-big">504-7742</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-box crew-box">
+                        <div class="box-title">TRIPULACIÓN</div>
+                        <div class="row-data"><span class="lbl">PILOTO:</span> JUAN JOSÉ ZÁRATE (N40790511)</div>
+                        <div class="row-data"><span class="lbl">COPILOTO:</span> PIO HILARIO QUISPE (Q21106595)</div>
+                        <div class="row-data"><span class="lbl">TRIPULANTE:</span> 1</div>
+                    </div>
+                    
+                    <div class="info-box bus-box text-center">
+                        <div class="box-title">DATOS DE LA UNIDAD</div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <div><span class="lbl">BUS:</span> T-104</div>
+                            <div><span class="lbl">PLACA:</span> BUF-193</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">CERT. HABILIT.:</span> 15P25002530E</div>
+                        <div class="row-data"><span class="lbl">AUT. SUNAT:</span> 14819932026</div>
+                    </div>
+
+                    <div class="info-box route-box text-end">
+                        <div class="box-title">DETALLE DE RUTA</div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <div><span class="lbl">ORIGEN:</span> LIMA</div>
+                            <div><span class="lbl">DESTINO:</span> CHICLAYO</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">SALIDA:</span> 19/12/2025 05:30 PM</div>
+                        <div class="row-data"><span class="lbl">SERVICIO:</span> PREMIUM</div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="table-wrapper">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th width="5%">ASIENTO</th>
+                            <th width="32%">APELLIDOS Y NOMBRES</th>
+                            <th width="9%">DOC. ID</th>
+                            <th width="4%">EDAD</th>
+                            <th width="9%">BOLETA</th>
+                            <th width="7%">N° PASAJE</th>
+                            <th width="10%">DESTINO</th>
+                            <th width="12%">PTO. EMB.</th>
+                            <th width="9%">IMPORTE</th> </tr>
+                    </thead>
+                    <tbody id="tableBody1"></tbody>
+                </table>
+            </div>
+
+            <footer class="footer-section">
+                <div class="totals-bar">
+                    <div class="t-item">CAPACIDAD: <span class="totalAsientos val">64</span></div>
+                    <div class="t-item">OCUPADOS: <span class="totalPasajeros val">0</span></div>
+                    <div class="t-item">LIBRES: <span class="totalLibres val">0</span></div>
+                    <div class="t-item">USUARIO: <span class="val">SANCHEZ TOCTO</span></div>
+                </div>
+                
+                <div class="signatures-row">
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA PILOTO
+                    </div>
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA COPILOTO
+                    </div>
+                    <div class="copy-tag">COPIA: SUNAT</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="sheet-outer">
+        <div class="sheet-content">
+            <header class="header-section">
+                <div class="header-top">
+                    <div class="brand-area">
+                        <h1 class="company-name">KUPOS PERU SAC</h1>
+                        <div class="ruc">RUC: 20613273108</div>
+                        <div class="address">OF. PRINCIPAL: Av. Camelias Nro. 185 Int. 803</div>
+                    </div>
+                    <div class="doc-area">
+                        <h2 class="doc-title">MANIFIESTO DE PASAJEROS</h2>
+                        <div class="manifest-box">
+                            <span class="lbl">N° MANIFIESTO:</span>
+                            <span class="val-big">504-7742</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-box crew-box">
+                        <div class="box-title">TRIPULACIÓN</div>
+                        <div class="row-data"><span class="lbl">PILOTO:</span> JUAN JOSÉ ZÁRATE (N40790511)</div>
+                        <div class="row-data"><span class="lbl">COPILOTO:</span> PIO HILARIO QUISPE (Q21106595)</div>
+                        <div class="row-data"><span class="lbl">TRIPULANTE:</span> 1</div>
+                    </div>
+                    
+                    <div class="info-box bus-box text-center">
+                        <div class="box-title">DATOS DE LA UNIDAD</div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <div><span class="lbl">BUS:</span> T-104</div>
+                            <div><span class="lbl">PLACA:</span> BUF-193</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">CERT. HABILIT.:</span> 15P25002530E</div>
+                        <div class="row-data"><span class="lbl">AUT. SUNAT:</span> 14819932026</div>
+                    </div>
+
+                    <div class="info-box route-box text-end">
+                        <div class="box-title">DETALLE DE RUTA</div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <div><span class="lbl">ORIGEN:</span> LIMA</div>
+                            <div><span class="lbl">DESTINO:</span> CHICLAYO</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">SALIDA:</span> 19/12/2025 05:30 PM</div>
+                        <div class="row-data"><span class="lbl">SERVICIO:</span> PREMIUM</div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="table-wrapper">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th width="5%">ASIENTO</th>
+                            <th width="32%">APELLIDOS Y NOMBRES</th>
+                            <th width="9%">DOC. ID</th>
+                            <th width="4%">EDAD</th>
+                            <th width="9%">BOLETO</th>
+                            <th width="7%">PNR</th>
+                            <th width="10%">DESTINO</th>
+                            <th width="12%">PTO. EMB.</th>
+                            <th width="9%">IMPORTE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody2"></tbody>
+                </table>
+            </div>
+
+            <footer class="footer-section">
+                <div class="totals-bar">
+                    <div class="t-item">CAPACIDAD: <span class="totalAsientos val">64</span></div>
+                    <div class="t-item">OCUPADOS: <span class="totalPasajeros val">0</span></div>
+                    <div class="t-item">LIBRES: <span class="totalLibres val">0</span></div>
+                    <div class="t-item">USUARIO: <span class="val">SANCHEZ TOCTO</span></div>
+                </div>
+                
+                <div class="signatures-row">
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA PILOTO
+                    </div>
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA COPILOTO
+                    </div>
+                    <div class="copy-tag">COPIA: TRANSPORTISTA</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="sheet-outer">
+        <div class="sheet-content">
+            <header class="header-section">
+                <div class="header-top">
+                    <div class="brand-area">
+                        <h1 class="company-name"> KUPOS PERU SAC</h1>
+                        <div class="ruc">RUC: 20613273108</div>
+                        <div class="address">OF. PRINCIPAL: Av. Camelias Nro. 185 Int. 803</div>
+                    </div>
+                    <div class="doc-area">
+                        <h2 class="doc-title">MANIFIESTO DE PASAJEROS</h2>
+                        <div class="manifest-box">
+                            <span class="lbl">N° MANIFIESTO:</span>
+                            <span class="val-big">504-7742</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-box crew-box">
+                        <div class="box-title">TRIPULACIÓN</div>
+                        <div class="row-data"><span class="lbl">PILOTO:</span> JUAN JOSÉ ZÁRATE (N40790511)</div>
+                        <div class="row-data"><span class="lbl">COPILOTO:</span> PIO HILARIO QUISPE (Q21106595)</div>
+                        <div class="row-data"><span class="lbl">TRIPULANTE:</span> 1</div>
+                    </div>
+                    
+                    <div class="info-box bus-box text-center">
+                        <div class="box-title">DATOS DE LA UNIDAD</div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <div><span class="lbl">BUS:</span> T-104</div>
+                            <div><span class="lbl">PLACA:</span> BUF-193</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">CERT. HABILIT.:</span> 15P25002530E</div>
+                        <div class="row-data"><span class="lbl">AUT. SUNAT:</span> 14819932026</div>
+                    </div>
+
+                    <div class="info-box route-box text-end">
+                        <div class="box-title">DETALLE DE RUTA</div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <div><span class="lbl">ORIGEN:</span> LIMA</div>
+                            <div><span class="lbl">DESTINO:</span> CHICLAYO</div>
+                        </div>
+                        <div class="row-data"><span class="lbl">SALIDA:</span> 19/12/2025 05:30 PM</div>
+                        <div class="row-data"><span class="lbl">SERVICIO:</span> PREMIUM</div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="table-wrapper">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th width="5%">ASIENTO</th>
+                            <th width="32%">APELLIDOS Y NOMBRES</th>
+                            <th width="9%">DOC. ID</th>
+                            <th width="4%">EDAD</th>
+                            <th width="9%">BOLETO</th>
+                            <th width="7%">PNR</th>
+                            <th width="10%">DESTINO</th>
+                            <th width="12%">PTO. EMB.</th>
+                            <th width="9%">IMPORTE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody3"></tbody>
+                </table>
+            </div>
+
+            <footer class="footer-section">
+                <div class="totals-bar">
+                    <div class="t-item">CAPACIDAD: <span class="totalAsientos val">64</span></div>
+                    <div class="t-item">OCUPADOS: <span class="totalPasajeros val">0</span></div>
+                    <div class="t-item">LIBRES: <span class="totalLibres val">0</span></div>
+                    <div class="t-item">USUARIO: <span class="val">SANCHEZ TOCTO</span></div>
+                </div>
+                
+                <div class="signatures-row">
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA PILOTO
+                    </div>
+                    <div class="sig-box">
+                        <div class="line"></div>
+                        FIRMA COPILOTO
+                    </div>
+                    <div class="copy-tag">COPIA: ARCHIVO</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
